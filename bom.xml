@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.10.3">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.AlteracaoConteudo">
+            <fields>
+                <field type="STRING" length="255" name="motivoalteracao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="linkdoconteudo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomedolink" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificareprovada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="aprovada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="reprovada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informealteracao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="alteraestrutura" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigocurso2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="metodologia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigooferta" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="conteudopublicado" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Curso" fetchType="LAZY" name="curso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomecurso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomecurso2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigocurso" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model1.BusinessObject">
+            <fields>
+                <field type="STRING" length="255" name="atributo1" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.BusinessObject1">
+            <fields>
+                <field type="STRING" length="255" name="instancia" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.CadCursDigital">
+            <fields>
+                <field type="STRING" length="255" name="nomesolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcionalsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="racf" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="curso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="objetivo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="custo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="previsao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="obrigatorio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indicador" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="atualizadoem" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="macrotema" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="publicoalvo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="publicoalvocadastrado" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.PublicoAlvo" fetchType="EAGER" name="publicoalvocriar" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="conteudo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idioma" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cursoequivalente" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="prerequisito" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="palavraschave" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="duracao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indicadortipoinscricao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="elegibilidade" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indicadortipoentrega" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="atributo1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="convocacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fornecedor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="conteudodisponibilizarredeagencias" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="linkpacote" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tamanhoarquivo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="previsaolancamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="avaliacaoaprendizagem" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="qtdecursodigital" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="aprovada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificareprovada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="inserido" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="publicado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoobrigatoriedade" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="publicoalvocriado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomepublicoalvo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.CadCursoPresencial">
+            <fields>
+                <field type="STRING" length="255" name="nomecurso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="objetivocurso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="custotreinamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="previsaoatualizacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="obrigatorio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoobrigatoriedade" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="indicadornatureza" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="dataatualizaconteudo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="macrotema" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="anexoconteudo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="idioma" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="palavrachave" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="duracaocurso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="qtdecursos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomesolicitante" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="racfsolicitante" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cursoequivalente" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="cursoprerequisito" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="funcional" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informarevisao" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Curso">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.DatasEhoraInstanciaSalaVirtual">
+            <fields>
+                <field type="LOCALDATE" length="255" name="datastreinamentosalavirtual" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="horainicio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="horafim" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.DatasSalaAulaVirtual">
+            <fields>
+                <field type="LOCALDATE" length="255" name="datatreinamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="horainicio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="horafim" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.DatashoraInstanciaSalaVirtual">
+            <fields>
+                <field type="LOCALDATE" length="255" name="datastreinamentosalavirtual" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="horainicio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="horafim" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.GlobalNomeProcesso">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.InstanciasNomeProcesso" fetchType="EAGER" name="instancia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="global1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="global2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="global3" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especifico1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especifico2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especifico3" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datafim" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.GlobalSalaVirtual">
+            <fields>
+                <field type="STRING" length="255" name="nomesolicitacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavelaffero" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomesolicitante" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomecurso" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="autoinscricao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="haveraconvite" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informarinstrutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="diretoriomaterial" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="datafim" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processId" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.InstanciasSalaVirtual" fetchType="EAGER" name="instancia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informarlinkautoinscricao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="conviteenviado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="extrairrelatorio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigooferta" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informarlink" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="agendabloqueada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gestaoconflitosrealizada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="qtdepaxconvidados" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="checkinrealizado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="turmavirtualefetivada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavelcancelamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="motivocancelamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificativadeoutros" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.DatashoraInstanciaSalaVirtual" fetchType="EAGER" name="datasturma" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="nomeexecucao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="qtdacessos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="treinamentoseraaplicadopara" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="linkcasopossua" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.InstanciaNomeProcesso">
+            <fields>
+                <field type="OFFSETDATETIME" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datafim" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especifico1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especifico2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especifico3" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.InstanciasNomeProcesso">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.InstanciaNomeProcesso" fetchType="EAGER" name="instancias" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.InstanciasSalaVirtual">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.IntanciaSalaVirtual" fetchType="EAGER" name="instancias" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Instrutor">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cpf" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcional" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="rg" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.IntanciaSalaVirtual">
+            <fields>
+                <field type="STRING" length="255" name="nomeexecucao" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="datafim" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="qtdeacessos" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.DatasEhoraInstanciaSalaVirtual" fetchType="EAGER" name="datasturma" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="treinamentoseraaplicadopara" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="linkcasopossua" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="cursosDigitais.ObjGlobalCadCursoDigital">
+            <fields>
+                <field type="INTEGER" length="255" name="qtdecursodigital" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bloomExpirado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="revisaoExpirado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="inserirCursoExpirado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="publicarConteudoExpirado" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.CadCursDigital" fetchType="LAZY" name="curso" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="aprovada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificareprovada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="inserido" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="publicado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomesolicitacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavel" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomesolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcionalsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="racfsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model3.cursodigitalcriado" fetchType="LAZY" name="cursodigitalcriado" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ObjetoGlobalCadCurso">
+            <fields>
+                <field type="INTEGER" length="255" name="qtdcursos" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.CadCursoPresencial" fetchType="LAZY" name="cadCursoPresencial" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="aprovado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificareprovada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="inserido" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="bloomExpirado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="revisaoExpirado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="inserirCursoSabaExpirado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomesolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="racfsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcionalsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model2.cursopresencialcriado" fetchType="LAZY" name="cursopresencriado" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="nomesolicitacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavel" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Proposal">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Voter" fetchType="LAZY" name="voter" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="label" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.PublicoAlvo">
+            <fields>
+                <field type="STRING" length="255" name="codigoempresa" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomeempresa" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nivelhierarquia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigohierarquia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomehierarquia" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigocargo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomecargo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.SalaAulaVirtual">
+            <fields>
+                <field type="STRING" length="255" name="nomesolicitacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavel" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="solicitante" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcionalsolicitante" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="racfsolicitante" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="areaacaoeducativa" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="curso" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="haveraconvite" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informarinstrutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomeinstrutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcionalinstrutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="emailinstrutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="rginstrutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="haveramaterial" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="diretoriomaterial" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="autoinscricao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomeexecucao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="seraaplicadopara" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="qtdeacessos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="sepossuilinkinforme" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="datafim" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.DatasSalaAulaVirtual" fetchType="LAZY" name="datastreinamento" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="linkautoinscricao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="conviteenviado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="extrairrelatorio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigooferta" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="link" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="agendabloqueada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="conflitosfinalizada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="paxconvocados" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="checkinrealizado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="turmavirtualefetivada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsavelcancelamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="motivodocancelamento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justifiqueoutros" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.SimplesComPrazo">
+            <fields>
+                <field type="STRING" length="255" name="atributo1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="atributo2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="atributo3" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="atributo4" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="atributo5" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datafim" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Tarefa">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="caseid" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="processid" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datainicio" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="datafim" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="duracao" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Tarefas">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.Tarefa" fetchType="EAGER" name="tarefas" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Turma">
+            <fields>
+                <field type="OFFSETDATETIME" length="255" name="datainicio" nullable="true" collection="true"/>
+                <field type="OFFSETDATETIME" length="255" name="datafim" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="numpax" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="createdBy" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="prazoExpirou" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.VacationAvailable">
+            <description>The number of vacation days available to the specified employee.</description>
+            <fields>
+                <field type="LONG" length="255" name="bonitaUserId" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="daysAvailableCounter" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueBonitaUserId">
+                    <fieldNames>
+                        <fieldName>bonitaUserId</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
+            <queries/>
+            <indexes>
+                <index name="INDEX_BONITA_USER_ID">
+                    <fieldNames>
+                        <fieldName>bonitaUserId</fieldName>
+                    </fieldNames>
+                </index>
+            </indexes>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.VacationRequest">
+            <description>An employee vacation request.&#xD;
+Possible status values are: pending, approved, refused, processing cancellation and cancelled.
+Note that we store only date (with hours, minutes... information) for start and return dates.
+Bonita use Java Long data type to store user and process instance id. Due to JavaScript limitation regarding maximum value of a number this value will be converted to text when being sent and received from end user web browser.</description>
+            <fields>
+                <field type="LONG" length="255" name="requesterBonitaUserId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="reviewerBonitaUserId" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="startDate" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="returnDate" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="numberOfDays" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="comments" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="calendarEventId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="newRequestProcessInstanceId" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="findModifiableByBonitaUserId" content="SELECT l &#xA;FROM VacationRequest l &#xA;WHERE l.requesterBonitaUserId = :requesterBonitaUserId&#xA;AND l.startDate &gt; CURRENT_DATE&#xA;AND l.status IN('pending')&#xA;ORDER BY l.startDate ASC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="requesterBonitaUserId" className="java.lang.Long"/>
+                    </queryParameters>
+                </query>
+                <query name="findCancellableByBonitaUserId" content="SELECT l &#xA;FROM VacationRequest l &#xA;WHERE l.requesterBonitaUserId = :requesterBonitaUserId&#xA;AND l.status IN('pending', 'approved')&#xA;ORDER BY l.startDate ASC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="requesterBonitaUserId" className="java.lang.Long"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes>
+                <index name="INDEX_1">
+                    <fieldNames>
+                        <fieldName>requesterBonitaUserId</fieldName>
+                    </fieldNames>
+                </index>
+                <index name="INDEX_2">
+                    <fieldNames>
+                        <fieldName>status</fieldName>
+                        <fieldName>requesterBonitaUserId</fieldName>
+                    </fieldNames>
+                </index>
+                <index name="INDEX_3">
+                    <fieldNames>
+                        <fieldName>status</fieldName>
+                        <fieldName>startDate</fieldName>
+                        <fieldName>requesterBonitaUserId</fieldName>
+                    </fieldNames>
+                </index>
+            </indexes>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Voter">
+            <fields>
+                <field type="BOOLEAN" length="255" name="vote" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="username" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="firstname" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastname" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="f" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="z" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model3.cursodigitalcriado">
+            <fields>
+                <field type="STRING" length="255" name="nomecursodigitalcriado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigoofertacursodigitalcriado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigocursodigitalcriado" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model2.cursopresencialcriado">
+            <fields>
+                <field type="STRING" length="255" name="nomecursopresencialcriado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigocursopresencialcriado" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="trilha.trilhaGlobal">
+            <fields>
+                <field type="STRING" length="255" name="nomesolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="funcionalsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="vertical" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="racfsolicita" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nometrilha" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="objetivotrilha" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="haveraconvocacao" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.ObjetoGlobalCadCurso" fetchType="EAGER" name="globalCursoPresencial" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="cursosDigitais.ObjGlobalCadCursoDigital" fetchType="LAZY" name="globalCursoDigital" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cursoexistente" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="solicitacaotrilhaaprovada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificativanaoaprovadatrilha" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="informealteracao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="codigotrilhacriada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nometrilhacriada" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomepublicoalvo" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="responsavel" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomesolicitacao" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
